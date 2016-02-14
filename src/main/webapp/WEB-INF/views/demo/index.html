@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title data-th-text="#{meta.title}">TPE Online Search and Tracking | Welcome...</title>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap/css/bootstrap.min.css"
+          data-th-href="@{/resources/lib/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/style.css" data-th-href="@{/resources/css/style.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/headers/header1.css "
+          data-th-href="@{/resources/css/headers/header1.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/responsive.css"
+          data-th-href="@{/resources/css/responsive.css}"/>
+    <link rel="shortcut icon" href="favicon.ico" data-th-href="@{/resources/favicon.ico}"/>
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../../resources/lib/font-awesome/css/font-awesome.css"
+          data-th-href="@{/resources/lib/font-awesome/css/font-awesome.css}"/>
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="../../../resources/css/themes/red.css" id="style_color"
+          data-th-href="@{/resources/css/themes/red.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/themes/headers/header1-red.css" id="style_color-header-1"
+          data-th-href="@{/resources/css/themes/headers/header1-red.css}"/>
+</head>
+<body>
+<!--=== Top ===-->
+<div class="top">
+    <div class="container">
+        <ul class="loginbar pull-right">
+            <li>
+                <i class="icon-globe"></i>
+                <a data-th-text="#{languages}">Languages</a>
+                <ul class="lenguages">
+                    <li class="active"><a href="#" data-th-text="#{languages.english}">English<i
+                            class="icon-ok"></i></a></li>
+                    <li><a href="#" data-th-text="#{languages.turkish}">Türkçe</a></li>
+                </ul>
+            </li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/help}" href="help.html">Help</a></li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/login}" href="login.html">Login</a></li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/signup}" href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_ex.html">
+                    <img id="logo-header" src="../../../resources/img/logo1.gif" alt="Logo"
+                         data-th-src="@{/resources/img/logo1.gif}"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/header-->
+<!--=== End Header ===-->
+<!--=== Content Part ===-->
+<div class="container">
+    <div class="row">
+        <div class="bg-light">
+            <div style="text-align: center;">
+                <h1 data-th-text="#{index.text.ces}">CES</h1>
+
+                <h1 data-th-text="#{index.text.onlineservices}">Online Services</h1>
+            </div>
+        </div>
+
+        <div class="row margin-bottom-20">
+            <div class="col-md-6">
+                <div class="headline"><h3 data-th-text="#{index.text.userarea}">User Area</h3></div>
+
+
+                <div class="tag-box tag-box-v3">
+                    <h4 data-th-text="#{index.text.text1}">Sign up to access user area and electronic documents </h4>
+
+                    <div style="text-align:center;margin-bottom:109px;margin-top: 79px;">
+                        <button class="btn-u" type="button" onClick="parent.location='login.html'"
+                                data-th-href="@{/demo/login}">To access your user area
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+                <div class="headline"><h2 data-th-text="#{index.text.text2}">Online Search and Track</h2></div>
+
+
+                <div class="tag-box tag-box-v3">
+                    <p style="text-align: center">
+                    <h4 data-th-text="#{index.text.text3}">Surf on our IP database without signing up</h4></p>
+                    <p style="padding-bottom:70px;"></p>
+
+                    <div class="row margin-bottom-10">
+                        <div class="col-md-4">
+                            <div class="bg-light">
+                                <h4 data-th-text="#{index.header1}">Trademark</h4>
+
+                                <p style="padding-bottom: 10px;">
+                                    <button class="btn-u btn-u-blue btn-u-small" type="button"
+                                            onClick="parent.location='trademark_search.html' "
+                                            data-th-href="@{/demo/trademark_search}"
+                                            data-th-text="#{button.label.search}"> Search
+                                    </button>
+                                </p>
+
+                                <p>
+                                    <button class="btn-u btn-u-blue btn-u-small" type="button"
+                                            onClick="parent.location='trademark_search_dossier.html'  "
+                                            data-th-href="@{/demo/trademark_search_dossier}"
+                                            data-th-text="#{button.label.filetracking}">File Tracking
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light">
+                                <h4 data-th-text="#{index.header2}">Patent</h4>
+
+                                <p style="padding-bottom: 10px;">
+                                    <button class="btn-u btn-u-red btn-u-small" type="button"
+                                            onClick="parent.location='patent_search.html'"
+                                            data-th-href="@{/demo/patent_search}"
+                                            data-th-text="#{button.label.search}"> Search
+                                    </button>
+                                </p>
+                                <p>
+                                    <button class="btn-u btn-u-red btn-u-small" type="button"
+                                            onClick="parent.location='patent_search_dossier.html'"
+                                            data-th-href="@{/demo/patent_search_dossier}"
+                                            data-th-text="#{button.label.filetracking}">File Tracking
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="bg-light">
+                                <h4 data-th-text="#{index.header3}">Design</h4>
+
+                                <p style="padding-bottom: 10px;">
+                                    <button class="btn-u btn-u-yellow btn-u-small" type="button"
+                                            onClick="parent.location='designs_search.html'"
+                                            data-th-href="@{/demo/designs_search}"
+                                            data-th-text="#{button.label.search}"> Search
+                                    </button>
+                                </p>
+                                <p>
+                                    <button class="btn-u btn-u-yellow btn-u-small" type="button"
+                                            onClick="parent.location='designs_search_dossier.html'"
+                                            data-th-href="@{/demo/designs_search_dossier}"
+                                            data-th-text="#{button.label.filetracking}">File Tracking
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+            </div>
+
+        </div>
+        <!--/row-->
+
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+
+<!--=== Footer ===-->
+<div class="footer">
+    <!--=== Copyright ===-->
+    <span data-th-text="#{footer.copy1}">2014 </span> &copy; <span
+        data-th-text="#{footer.copy2}">|Türk Patent Enstitüsü </span>
+    <a data-th-src="@{/demo/policy}" href="policy.html">Privacy Policy</a>
+    <!--=== End Copyright ===-->
+</div>
+<!--/footer-->
+<!--=== End Footer ===-->
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="../../../resources/lib/jquery-1.10.2.min.js"
+        data-th-src="@{/resources/lib/jquery-1.10.2.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/jquery-migrate-1.2.1.min.js"
+        data-th-src="@{/resources/lib/jquery-migrate-1.2.1.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/bootstrap/js/bootstrap.min.js"
+        data-th-src="@{/resources/lib/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/hover-dropdown.min.js"
+        data-th-src="@{/resources/lib/hover-dropdown.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/back-to-top.js"
+        data-th-src="@{/resources/lib/back-to-top.js}"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="../../../resources/js/app.js" data-th-src="@{/resources/js/app.js}"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="../../../resources/lib/respond.js" data-th-src="@{/resources/lib/respond.js}"></script>
+<![endif]-->
+
+</body>
+</html> 

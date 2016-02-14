@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head id="headerFragment" data-th-fragment="headerFragment">
+    <meta charset="UTF-8" />
+    <title data-th-text='#{title}'>Çevrimiçi Evrak Arama</title>
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap.min.css"
+          data-th-href="@{/resources/lib/bootstrap.min.css}" />
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap-responsive.min.css"
+          data-th-href="@{/resources/lib/bootstrap-responsive.min.css}" />
+    <link rel="stylesheet" href="../../../resources/css/main.css"
+          data-th-href="@{/resources/css/main.css}" />
+</head>
+<body>
+
+<div data-th-fragment="topmenu">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="/" data-th-href="@{/demo/}">Project Name <i>{ALPHA}</i></a>
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+
+                    </p>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/people}">Menu 1</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/registration}">Menu 2</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/login}">Menu 3</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/otherItems}">Menu 4</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/otherItems}">Menu 5</a></li>
+                    </ul>
+                </div> <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-th-fragment="left">
+    <div class="well sidebar-nav span3">
+        <ul class="nav nav-list">
+            <li class="nav-header">Navigation could go here</li>
+            <li><a href="http://www.gopivotal.com/">Pivotal, Inc</a></li>
+            <li><a href="http://www.springsource.org/spring-xd">Spring XD</a></li>
+            <li><a href="http://spring.io">Spring</a></li>
+        </ul>
+    </div>
+</div>
+
+<div data-th-fragment="foot">
+    <footer>
+        <p>&copy; Türk Patent Enstitüsü 2014</p>
+    </footer>
+</div>
+
+</body>
+
+</html>

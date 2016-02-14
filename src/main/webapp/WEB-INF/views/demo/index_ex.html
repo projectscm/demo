@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-th-text='#{title}'>Çevrimiçi Evrak Arama</title>
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap.min.css"
+          data-th-href="@{/resources/lib/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap-responsive.min.css"
+          data-th-href="@{/resources/lib/bootstrap-responsive.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/main.css"
+          data-th-href="@{/resources/css/main.css}"/>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div data-th-replace="fragment/menu :: topmenu">
+    <!-- ============================================================================ -->
+    <!-- This content is only used for static prototyping purposes (natural templates)-->
+    <!-- and therefore will be replaced                                               -->
+    <!-- ============================================================================ -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index_ex.html" data-th-href="@{/demo}">Project Name <i>{ALPHA}</i></a>
+
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+
+                    </p>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/people}" href="people.html">Menu 1</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/registration}">Menu 2</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/login}">Menu 3</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- {!begin layout} -->
+<p data-th-text="#{greeting}">This line will be replaced with a greeting at runtime</p>
+
+<!-- {!end layout} -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="../../../resources/lib/jquery-2.1.1.min.js" data-th-src="@{/resources/lib/jquery-2.1.1.min.js}"></script>
+<script src="../../../resources/lib/bootstrap.min.js" data-th-src="@{/resources/lib/bootstrap.min.js}"></script>
+</body>
+</html>

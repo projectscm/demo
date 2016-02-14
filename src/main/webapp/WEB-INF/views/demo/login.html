@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title data-th-text="#{meta.title}">TPE Online Search and Tracking | Welcome...</title>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap/css/bootstrap.min.css"
+          data-th-href="@{/resources/lib/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/style.css" data-th-href="@{/resources/css/style.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/headers/header1.css"
+          data-th-href="@{/resources/css/headers/header1.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/responsive.css"
+          data-th-href="@{/resources/css/responsive.css}"/>
+    <link rel="shortcut icon" href="favicon.ico" data-th-href="@{/resources/favicon.ico}"/>
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../../resources/lib/font-awesome/css/font-awesome.css"
+          data-th-href="@{/resources/lib/font-awesome/css/font-awesome.css}"/>
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="../../../resources/css/themes/red.css" id="style_color"
+          data-th-href="@{/resources/css/themes/red.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/themes/headers/header1-red.css" id="style_color-header-1"
+          data-th-href="@{/resources/css/themes/headers/header1-red.css}"/>
+</head>
+<body>
+<!--=== Top ===-->
+<div class="top">
+    <div class="container">
+        <ul class="loginbar pull-right">
+            <li>
+                <i class="icon-globe"></i>
+                <a data-th-text="#{languages}">Languages</a>
+                <ul class="lenguages">
+                    <li class="active"><a href="#" data-th-text="#{languages.english}">English<i
+                            class="icon-ok"></i></a></li>
+                    <li><a href="#" data-th-text="#{languages.turkish}">Türkçe</a></li>
+                </ul>
+            </li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/help}" href="help.html">Help</a></li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/login}" href="login.html">Login</a></li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/signup}" href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_ex.html">
+                    <img id="logo-header" src="../../../resources/img/logo1.gif" alt="Logo"
+                         data-th-href="@{/resources/img/logo1.gif}"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/header-->
+<!--=== End Header ===-->
+<!--=== Content Part ===-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+            <form class="reg-page" id="form_login">
+
+                <div class="reg-header">
+                    <h2 data-th-text="#{login.header}">Login to your account</h2>
+                </div>
+
+                <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="icon-user"></i></span>
+                    <input type="text" placeholder="Email" class="form-control"/>
+                </div>
+
+                <div class="input-group margin-bottom-20">
+                    <span class="input-group-addon"><i class="icon-lock"></i></span>
+                    <input type="text" placeholder="Password" class="form-control"/>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <button class="btn-u pull-right" type="submit" data-th-text="#{button.label.login}">Login
+                        </button>
+                    </div>
+                </div>
+
+                <hr/>
+
+                <ul>
+                    <li><a data-th-href="@{/demo/recover}" href="recover.html" data-th-text="#{login.header2}">Forget
+                        your Password ?</a></li>
+                    <li><a data-th-href="@{/demo/signup}" href="signup.html" data-th-text="#{login.header3}">Sign Up</a>
+                    </li>
+                    <!--ddeneme bağlantılar -->
+                    <li><a data-th-href="@{/demo/userarea}" href="userarea.html">userarea</a></li>
+                    <li><a data-th-href="@{/demo/recover}" href="recover.html">recover</a></li>
+                    <li><a data-th-href="@{/demo/newPassword}" href="newPassword.html">newPassword</a></li>
+                    <li><a data-th-href="@{/demo/newSubprofile}" href="newSubprofile.html">newSubprofile</a></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+<!--=== Footer ===-->
+<div class="footer">
+    <!--=== Copyright ===-->
+    <span data-th-text="#{footer.copy1}">2014 </span> &copy; <span
+        data-th-text="#{footer.copy2}">|Türk Patent Enstitüsü </span>
+    <a href="policy.html" data-th-href="@{/demo/policy}">Privacy Policy</a>
+    <!--=== End Copyright ===-->
+</div>
+<!--/footer-->
+<!--=== End Footer ===-->
+
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="../../../resources/lib/jquery-1.10.2.min.js"
+        data-th-src="@{/resources/lib/jquery-1.10.2.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/jquery-migrate-1.2.1.min.js"
+        data-th-src="@{/resources/lib/jquery-migrate-1.2.1.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/bootstrap/js/bootstrap.min.js"
+        data-th-src="@{/resources/lib/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/hover-dropdown.min.js"
+        data-th-src="@{/resources/lib/hover-dropdown.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/back-to-top.js"
+        data-th-src="@{/resources/lib/back-to-top.js}"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="../../../resources/js/app.js" data-th-src="@{/resources/js/app.js}"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="../../../resources/lib/respond.js" data-th-src="@{/resources/lib/respond.js}"></script>
+<![endif]-->
+
+</body>
+</html>

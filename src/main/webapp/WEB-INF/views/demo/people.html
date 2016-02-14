@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-th-text="#{title}">Çevrimiçi Evrak Arama</title>
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap.min.css"
+          data-th-href="@{/resources/lib/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap-responsive.min.css"
+          data-th-href="@{/resources/lib/bootstrap-responsive.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/main.css"
+          data-th-href="@{/resources/css/main.css}"/>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- {!begin layout} -->
+<div data-th-replace="fragment/menu :: topmenu">
+    <!-- ============================================================================ -->
+    <!-- This content is only used for static prototyping purposes (natural templates)-->
+    <!-- and is therefore will be replaced                                     -->
+    <!-- ============================================================================ -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a class="brand" href="index_ex.html" data-th-href="@{/demo}">Project Name <i>{ALPHA}</i></a>
+
+                <div class="nav-collapse collapse">
+                    <p class="navbar-text pull-right">
+
+                    </p>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/people}">Menu 1</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/items}">Menu 2</a></li>
+                    </ul>
+                    <ul class="nav">
+                        <li><a data-th-href="@{/demo/otherItems}">Menu 3</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="box-table-a">
+    <caption data-th-text="#{user.table.caption}">Site Users</caption>
+    <thead>
+    <tr>
+        <th scope="col" data-th-text="#{user.id.label}">Id</th>
+        <th scope="col" data-th-text="#{user.firstname.label}">First Name</th>
+        <th scope="col" data-th-text="#{user.lastname.label}">Last Name</th>
+        <th scope="col" data-th-text="#{user.username.label}">Username</th>
+        <th scope="col" data-th-text="#{user.role.label}">Role</th>
+        <th scope="col" data-th-text="#{actions}">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr data-th-each="u : ${users}">
+        <td data-th-text="${u.id}">1</td>
+        <td data-th-text="${u.firstName}">George</td>
+        <td data-th-text="${u.lastName}">Washington</td>
+        <td data-th-text="${u.username}">gwash</td>
+        <td data-th-text="#{${'user.role.' + u.role}}">admin</td>
+        <td><a href="#" data-th-href="@{/users/delete(id=${u.id})}">del</a> |
+            <a href="#" data-th-href="@{/users/edit(id=${u.id})}">edit</a>
+        </td>
+    </tr>
+
+    <tr data-th-remove="all">
+        <td>2</td>
+        <td>John</td>
+        <td>Adams</td>
+        <td>jadam</td>
+        <td>user</td>
+        <td><a href="#">del</a> | <a href="#">edit</a></td>
+    </tr>
+    <tr data-th-remove="all">
+        <td>3</td>
+        <td>Thomas</td>
+        <td>Jefferson</td>
+        <td>tjeff</td>
+        <td>user</td>
+        <td><a href="#">del</a> | <a href="#">edit</a></td>
+    </tr>
+    <tr data-th-remove="all">
+        <td>4</td>
+        <td>James</td>
+        <td>Madison</td>
+        <td>jmadi</td>
+        <td>admin</td>
+        <td><a href="#">del</a> | <a href="#">edit</a></td>
+    </tr>
+    <tr data-th-remove="all">
+        <td>5</td>
+        <td>James</td>
+        <td>Monroe</td>
+        <td>jmonr</td>
+        <td>admin</td>
+        <td><a href="#">del</a> | <a href="#">edit</a></td>
+    </tr>
+    </tbody>
+</table>
+<!-- {!end layout} -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="../../../resources/lib/jquery-2.1.1.min.js" data-th-src="@{/resources/lib/jquery-2.1.1.min.js}"></script>
+<script src="../../../resources/lib/bootstrap.min.js" data-th-src="@{/resources/lib/bootstrap.min.js}"></script>
+</body>
+</html>

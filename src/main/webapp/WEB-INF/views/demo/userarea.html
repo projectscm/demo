@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en"> <!--<![endif]-->
+<head>
+    <title data-th-text="#{meta.title}">TPE Online Search and Tracking | Welcome...</title>
+    <!-- Meta -->
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!-- CSS Global Compulsory-->
+    <link rel="stylesheet" href="../../../resources/lib/bootstrap/css/bootstrap.min.css"
+          data-th-href="@{/resources/lib/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/style.css" data-th-href="@{/resources/css/style.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/headers/header1.css "
+          data-th-href="@{/resources/css/headers/header1.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/responsive.css"
+          data-th-href="@{/resources/css/responsive.css}"/>
+    <link rel="shortcut icon" href="favicon.ico" data-th-href="@{/resources/favicon.ico}"/>
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="../../../resources/lib/font-awesome/css/font-awesome.css"
+          data-th-href="@{/resources/lib/font-awesome/css/font-awesome.css}"/>
+
+    <!-- CSS Theme -->
+    <link rel="stylesheet" href="../../../resources/css/themes/red.css" id="style_color"
+          data-th-href="@{/resources/css/themes/red.css}"/>
+    <link rel="stylesheet" href="../../../resources/css/themes/headers/header1-red.css" id="style_color-header-1"
+          data-th-href="@{/resources/css/themes/headers/header1-red.css}"/>
+</head>
+<body>
+<!--=== Top ===-->
+<div class="top">
+    <div class="container">
+        <ul class="loginbar pull-right">
+            <li>
+                <i class="icon-globe"></i>
+                <a data-th-text="#{languages}">Languages</a>
+                <ul class="lenguages">
+                    <li class="active"><a href="#" data-th-text="#{languages.english}">English<i
+                            class="icon-ok"></i></a></li>
+                    <li><a href="#" data-th-text="#{languages.turkish}">Türkçe</a></li>
+                </ul>
+            </li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/help}" href="help.html">Help</a></li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/login}" href="login.html">Login</a></li>
+            <li class="devider"></li>
+            <li><a data-th-href="@{/demo/signup}" href="signup.html">Sign Up</a></li>
+        </ul>
+    </div>
+</div>
+<!--/top-->
+<!--=== End Top ===-->
+<!--=== Header ===-->
+<div class="header">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index_ex.html">
+                    <img id="logo-header" src="../../../resources/img/logo1.gif" alt="Logo"
+                         data-th-src="@{/resources/img/logo1.gif}"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/header-->
+<!--=== End Header ===-->
+<!--=== Content Part ===-->
+<div class="container">
+    <div class="row blog-page">
+        <div class="bg-light">
+            <h1 data-th-text="#{userarea.header}">User Area</h1>
+        </div>
+        <div class="row tab-v3">
+            <div class="col-sm-3">
+                <ul class="nav nav-pills nav-stacked">
+                    <li class="active"><a href="#options" data-toggle="tab"><i class="icon-gear"></i><span
+                            data-th-text="#{userarea.left.menu1}"> Options </span></a></li>
+                    <li><a href="#onlineservices" data-toggle="tab"><i class="icon-globe"></i> <span
+                            data-th-text="#{userarea.left.menu2}">Online Services </span></a></li>
+                    <li><a href="#alert" data-toggle="tab"><i class="icon-bullhorn"></i><span
+                            data-th-text="#{userarea.left.menu3}"> Alert</span></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="options">
+                        <h4><span data-th-text="#{userarea.left.menu1}">Options</span></h4>
+
+                        <div class="tab-v2">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a href="#logindetails" data-toggle="tab"><span
+                                        data-th-text="#{options.tab.header1}">Login Details</span></a></li>
+                                <li><a href="#profile" data-toggle="tab"><span data-th-text="#{options.tab.header2}">Personal Details </span></a>
+                                </li>
+                                <li><a href="#subprofile" data-toggle="tab"><span data-th-text="#{options.tab.header3}">Subprofiles </span></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="logindetails">
+
+                                    <form class="reg-page" id="form_logindetails">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.email.label}">User Email</label>
+                                                deneme
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.email.administrative.label}">Administrative
+                                                    Email<span class="color-red">*</span></label>
+                                                <input type="email" class="form-control margin-bottom-20"/>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.email.confirmadministrative.label}">Confirm
+                                                    administrative Email <span class="color-red">*</span></label>
+                                                <input type="email" class="form-control margin-bottom-20"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.oldpassword.label}">Old Password <span
+                                                        class="color-red">*</span></label>
+                                                <input type="password" class="form-control margin-bottom-20"/>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.newpassword.label}">New Password <span
+                                                        class="color-red">*</span></label>
+                                                <input type="password" class="form-control margin-bottom-20"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <button class="btn-u pull-right" type="submit"
+                                                        data-th-text="#{button.label.submit2}">Save Changes
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane" id="profile">
+                                    <form class="reg-page" id="form_personeldetails">
+                                        <label data-th-text="#{user.type.label}">Type</label>
+                                        <input type="text" class="form-control margin-bottom-10"/>
+
+                                        <label data-th-text="#{user.name.label}">Name</label>
+                                        <input type="text" class="form-control margin-bottom-10"/>
+
+                                        <label data-th-text="#{user.surname.label}">Surname</label>
+                                        <input type="text" class="form-control margin-bottom-10"/>
+
+                                        <label data-th-text="#{user.nationality.label}">Nationality</label>
+                                        <select class="form-control">
+                                            <option>Turkey</option>
+                                            <option>Spain</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+
+                                        <label data-th-text="#{user.address.label}">Address</label>
+                                        <textarea name=" " id="" cols="10" rows="5"
+                                                  class="form-control margin-bottom-10"></textarea>
+
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.address.city.label}">Town/City <span
+                                                        class="color-red">*</span></label>
+                                                <input type="city" class="form-control margin-bottom-20"/>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <label data-th-text="#{user.address.postcode.label}">Post Code <span
+                                                        class="color-red">*</span></label>
+                                                <input type="postcode" class="form-control margin-bottom-20"/>
+                                            </div>
+                                        </div>
+
+                                        <label data-th-text="#{user.address.country.label}">Country</label>
+                                        <select class="form-control">
+                                            <option>Turkey</option>
+                                            <option>Spain</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+
+
+                                        <div class="row">
+                                            <div class="col-md-6" style="padding-top: 20px;">
+                                                <button class="btn-u pull-right" type="submit"
+                                                        data-th-text="#{button.label.submit3}">Change name and address
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="tab-pane" id="subprofile">
+
+                                    <div class="col-md-6">
+
+                                        <p>
+                                            <button class="btn btn-success btn-xs" data-th-text="#{button.label.add}"><i
+                                                    class="icon-ok"></i>Add
+                                            </button>
+                                            <button class="btn btn-danger btn-xs" data-th-text="#{button.label.delete}">
+                                                <i class="icon-trash"></i> Delete
+                                            </button>
+                                            <button class="btn btn-warning btn-xs" data-th-text="#{button.label.edit}">
+                                                <i class="icon-pencil"></i> Edit
+                                            </button>
+                                            <button class="btn btn-info btn-xs" data-th-text="#{button.label.active}"><i
+                                                    class="icon-thumbs-up"></i> Active
+                                            </button>
+                                            <button class="btn btn-default btn-xs"
+                                                    data-th-text="#{button.label.passive}"><i
+                                                    class="icon-thumbs-down"></i> Passive
+                                            </button>
+
+
+                                        </p>
+                                    </div>
+                                    <!--Subprofile Table -->
+                                    <div class="panel panel-red margin-bottom-40">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><i class="icon-user"></i> <span
+                                                    data-th-text="#{options.tab.header3}">Subprofiles </span></h3>
+                                        </div>
+                                        <div class="panel-body">
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col" data-th-text="#{user.id.label}">Id</th>
+                                                    <th scope="col" data-th-text="#{user.name.label}">Name</th>
+                                                    <th scope="col" data-th-text="#{user.surname.label}">Surname</th>
+                                                    <th scope="col" data-th-text="#{user.email.label}">Email</th>
+                                                    <th scope="col" data-th-text="#{user.role.label}">Role</th>
+                                                    <th scope="col" data-th-text="#{user.status.label}">Status</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>Superuser</td>
+                                                    <td>Active</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>Tuğba</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                    <td>Superuser</td>
+                                                    <td>Active</td>
+
+                                                </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--End Table-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="onlineservices">
+
+                        <h4>under construction</h4>
+
+                    </div>
+
+                    <div class="tab-pane" id="alert">
+
+                        <h4>under construction</h4>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!--/row-->
+</div>
+<!--/container-->
+<!--=== End Content Part ===-->
+<!--=== Footer ===-->
+<div class="footer">
+    <!--=== Copyright ===-->
+    <span data-th-text="#{footer.copy1}">2014 </span> &copy; <span
+        data-th-text="#{footer.copy2}">|Türk Patent Enstitüsü </span>
+    <a href="policy.html" data-th-href="@{/demo/policy}">Privacy Policy</a>
+    <!--=== End Copyright ===-->
+</div>
+<!--/footer-->
+<!--=== End Footer ===-->
+
+
+<!-- JS Global Compulsory -->
+<script type="text/javascript" src="../../../resources/lib/jquery-1.10.2.min.js"
+        data-th-src="@{/resources/lib/jquery-1.10.2.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/jquery-migrate-1.2.1.min.js"
+        data-th-src="@{/resources/lib/jquery-migrate-1.2.1.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/bootstrap/js/bootstrap.min.js"
+        data-th-src="@{/resources/lib/bootstrap/js/bootstrap.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/hover-dropdown.min.js"
+        data-th-src="@{/resources/lib/hover-dropdown.min.js}"></script>
+<script type="text/javascript" src="../../../resources/lib/back-to-top.js"
+        data-th-src="@{/resources/lib/back-to-top.js}"></script>
+<!-- JS Page Level -->
+<script type="text/javascript" src="../../../resources/js/app.js" data-th-src="@{/resources/js/app.js}"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        App.init();
+    });
+</script>
+<!--[if lt IE 9]>
+<script src="../../../resources/lib/respond.js" data-th-src="@{/resources/lib/respond.js}"></script>
+<![endif]-->
+
+</body>
+</html>

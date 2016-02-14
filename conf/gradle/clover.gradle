@@ -1,0 +1,20 @@
+apply plugin: 'clover'
+
+dependencies {
+    clover 'com.cenqua.clover:clover:3.3.0'
+}
+
+clover {
+    licenseLocation = file("conf/clover/clover.license").absolutePath
+    targetPercentage = '50%'
+
+    report {
+        xml=true
+        html = true
+        filter = 'if,else'
+    }
+}
+
+check {
+    dependsOn += ['cloverGenerateReport']
+}
